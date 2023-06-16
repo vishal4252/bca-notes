@@ -191,6 +191,194 @@
         </div>
         <div class="accordion-item">
             <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo-p1" aria-expanded="true" aria-controls="collapseTwo-p1">
+                    <h4>
+                        C++ Pointer
+                    </h4>
+                </button>
+            </h2>
+            <div id="collapseTwo-p1" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>
+                        In C++, a pointer is a variable that stores the memory address of another variable. Pointers
+                        allow you to indirectly
+                        access and manipulate the data stored in memory. They are powerful and versatile tools used in
+                        various programming
+                        scenarios.
+                    </p>
+                    <strong>Here's a brief discussion on pointers in C++ with an example:</strong><br><br>
+                    <strong>Declaration and Initialization:</strong>
+                    <p>
+                        To declare a pointer variable in C++, you use the asterisk (*) symbol before the variable name.
+                        The syntax for declaring
+                        a pointer is as follows:
+                    </p>
+                    <pre>
+            dataType* pointerName;
+                    </pre>
+                    <p>
+                        For example, to declare a pointer to an integer named "ptr", you would write:
+                    </p>
+                    <pre>
+            int* ptr;
+                    </pre>
+                    <p>
+                        To initialize a pointer, you can assign the address of another variable using the address-of
+                        operator (&). For example:
+                    </p>
+                    <pre>
+            int num = 5;
+            int* ptr = & num;
+                    </pre>
+                    <strong>Dereferencing Pointers:</strong>
+                    <p>
+                        Dereferencing a pointer means accessing the value stored at the memory address it points to. You
+                        use the dereference
+                        operator (*) to access the value. For example:
+                    </p>
+                    <pre>
+            int value = *ptr; // Accessing the value pointed to by ptr
+                    </pre>
+                    <strong>Pointer Arithmetic:</strong>
+                    <p>
+                        Pointers can be manipulated using arithmetic operations. You can increment or decrement a
+                        pointer, which will make it
+                        point to the next or previous memory location of the same data type. For example:
+                    </p>
+                    <pre>
+            int* nextPtr = ptr + 1; // Points to the next memory location of the same data type
+                    </pre>
+                    <strong>Null Pointers:</strong>
+                    <p>
+                        A null pointer is a pointer that does not point to any valid memory address. You can assign a
+                        null value to a pointer
+                        using the keyword "nullptr". For example:
+                    </p>
+                    <pre>
+            int* nullPtr = nullptr;
+                    </pre>
+                    <strong>Dynamic Memory Allocation:</strong>
+                    <p>
+                        Pointers are commonly used in dynamic memory allocation. You can allocate memory dynamically at
+                        runtime using the "new"
+                        keyword. For example:
+                    </p>
+                    <pre>
+            int* dynamicPtr = new int;
+            *dynamicPtr = 10;
+                    </pre>
+                    <strong>
+                        It's important to properly deallocate dynamically allocated memory using the "delete"
+                        keyword when it is no longer
+                        needed. For example:
+                    </strong>
+                    <pre>
+            delete dynamicPtr;
+                    </pre>
+                    <p>
+                        Pointers in C++ provide flexibility and efficiency in memory management and data manipulation.
+                        They are extensively used
+                        in scenarios such as working with arrays, creating data structures, implementing dynamic data
+                        storage, and interacting
+                        with functions that require passing variables by reference. However, it's crucial to use
+                        pointers with care to avoid
+                        potential issues like memory leaks or accessing invalid memory locations.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo-p2" aria-expanded="true" aria-controls="collapseTwo-p2">
+                    <h4>
+                        C++ Arrrays
+                    </h4>
+                </button>
+            </h2>
+            <div id="collapseTwo-p2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>
+                        In C++, an array is a collection of elements of the same data type that are stored in contiguous
+                        memory locations.
+                        Arrays provide a way to store and access multiple values under a single variable name.
+                    </p>
+                    <strong>Here's a brief discussion on arrays in C++ with an example:</strong><br><br>
+                    <strong>Declaration and Initialization:</strong>
+                    <p>
+                        To declare an array in C++, you need to specify the data type of the elements it will hold and
+                        the number of elements it
+                        can store. The syntax for declaring an array is as follows:
+                    </p>
+                    <pre>
+            dataType arrayName[arraySize];
+                    </pre>
+                    <p>
+                        For example, to declare an array of integers named "numbers" with a size of 5, you would write:
+                    </p>
+                    <pre>
+            int numbers[5];
+                    </pre>
+                    <p>
+                        You can also initialize the array elements at the time of declaration:
+                    </p>
+                    <pre>
+            int numbers[] = {1, 2, 3, 4, 5};
+                    </pre>
+                    <strong>Accessing Array Elements:</strong>
+                    <p>
+                        Array elements can be accessed using their index. The index starts from 0 and goes up to
+                        "arraySize - 1". To access an
+                        element, you use the array name followed by the index inside square brackets. For example, to
+                        access the second element
+                        of the "numbers" array, you would write:
+                    </p>
+                    <pre>
+            int secondNumber = numbers[1];
+                    </pre>
+                    <strong>Modifying Array Elements:</strong>
+                    <p>
+                        You can modify array elements by assigning new values to them using the assignment operator. For
+                        example, to change the
+                        value of the third element of the "numbers" array to 10, you would write:
+                    </p>
+                    <pre>
+            numbers[2] = 10;
+                    </pre>
+                    <strong>Iterating Over an Array:</strong>
+                    <p>
+                        You can use loops, such as the "for" loop, to iterate over the elements of an array. The loop
+                        variable can be used as
+                        the index to access each element. For example, to print all the elements of the "numbers" array,
+                        you can write:
+                    </p>
+                    <pre>
+            for (int i = 0; i < 5; i++) { 
+                cout << numbers[i] << " " ;
+            }
+                    </pre>
+                    <strong>Multi-dimensional Arrays:</strong>
+                    <p>
+                        C++ also supports multi-dimensional arrays, such as 2D arrays or matrices. These are arrays with
+                        multiple rows and
+                        columns. To declare and access elements in a 2D array, you use multiple indices. For example:
+                    </p>
+                    <pre>
+            int matrix[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+            int element = matrix[1][2]; // Accessing the element at row 1, column 2
+                    </pre>
+                    <p>
+                        Arrays in C++ provide a convenient way to store and manipulate collections of data. They are
+                        widely used in various
+                        programming scenarios, such as storing lists of values, implementing algorithms, and
+                        representing matrices or tables.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                     <h4>
@@ -1713,7 +1901,7 @@
                     <pre>
                  Example:
                  std::string text = "Hello, World!";
-                 std::vector<int> numbers = {1, 2, 3, 4, 5};
+                 std::vector< int> numbers = {1, 2, 3, 4, 5};
                  std::map<std::string, int> scores = {{"Alice", 90}, {"Bob", 85}};
                     </pre>
                     <strong>3. User-Defined Types:</strong>
@@ -2662,8 +2850,8 @@
                  Circle circle;
                  Square square;
                  
-                 Shape* shape1 = &circle;
-                 Shape* shape2 = &square;
+                 Shape* shape1 = & circle;
+                 Shape* shape2 = & square;
                  
                  shape1->draw(); // Calls the draw() function of Circle
                  shape2->draw(); // Calls the draw() function of Square
@@ -2727,8 +2915,8 @@
                  Derived1 derived1;
                  Derived2 derived2;
                  
-                 Base* basePtr1 = &derived1;
-                 Base* basePtr2 = &derived2;
+                 Base* basePtr1 = & derived1;
+                 Base* basePtr2 = & derived2;
                  
                  basePtr1->polymorphicFunction(); // Calls the polymorphicFunction() of Derived1
                  basePtr2->polymorphicFunction(); // Calls the polymorphicFunction() of Derived2
@@ -4245,7 +4433,7 @@
                             Strings are represented by the "std::string" class in C++.
                         </li>
                         <li>
-                            To use strings, you need to include the "<string>" header.
+                            To use strings, you need to include the "< string>" header.
                         </li>
                         <li>
                             Strings can be initialized using literals, other strings, or character arrays.
